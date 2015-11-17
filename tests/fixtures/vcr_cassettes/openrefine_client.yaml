@@ -1,0 +1,21 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.8.1]
+    method: GET
+    uri: http://localhost:3333/command/core/get-version
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAKtWKkotyyzOzM9TslIqMjIxMFfSUUorzcmJL0stggob6ZkqRIPlYmGSeYm5qUAZ
+        9/z89JxUhaDUtMy8VAVUdSj6lWoB9OQiemkAAAA=
+    headers:
+      content-encoding: [gzip]
+      content-type: [application/json; charset=UTF-8]
+      server: [Jetty(6.1.22)]
+    status: {code: 200, message: OK}
+version: 1

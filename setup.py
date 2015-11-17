@@ -43,5 +43,7 @@ setup(
 
     install_requires=[
         'click >= 5.0',
+        'requests >= 2.0',
+        'six >= 1.0',
     ],
 )
