@@ -36,4 +36,12 @@ setup(
     keywords='data dataprotocols jsontableschema openrefine datascience',
 
     packages=find_packages(exclude=['tests']),
+    entry_points='''
+        [console_scripts]
+        jsontableschema-openrefine = jsontableschema.plugins.openrefine.cli:cli
+    ''',
+
+    install_requires=[
+        'click >= 5.0',
+    ],
 )
