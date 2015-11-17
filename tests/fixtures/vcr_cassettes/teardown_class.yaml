@@ -11,10 +11,10 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAAMWQOw6DMBBErxK5BsnrD/50qVKlo0q3gY1EhDEypkK+e8wF0lKNNHrSPM3B1hS/
-        NOSN+YNBx0FIZzVoY85iwUDMs/uy7DjfHnN81+gprJQw74k21rAhEWYaKyY46BagBdND5zX3Cl4V
-        CHGcPtM/Yti3HMOTMo6YsQ6X0lRWKie0UdZyuFoGrJNCQycdV/xyGaOUFcKI855rZUr5AaB06eFC
-        AgAA
+        H4sIAAAAAAAAAMWRsQrDIBCGX6U4J+BpvNNsnTp1y9TNJhZSYgzGTMF3r+0DdHU4fjg+uI//TrbF
+        8HZj2ll/MtBARvzG0HexWu9Yz67retjlclvCs8Tg/OaiTUd0O2vYGJ1NbiqY4KBagBZoAOpF13fm
+        UQAfpvk1/yPGY0/B312yk022HM65YaAUpw61BCOxtozgnBQQCiTUtWWgqEgkbUDp+s0IrSXXqBTW
+        flPOH/hlmEjPAgAA
     headers:
       content-encoding: [gzip]
       content-type: [application/json; charset=UTF-8]
@@ -29,7 +29,7 @@ interactions:
       Content-Length: ['0']
       User-Agent: [python-requests/2.8.1]
     method: POST
-    uri: http://localhost:3333/command/core/delete-project?project=1893251639040
+    uri: http://localhost:3333/command/core/delete-project?project=1550746831936
   response:
     body:
       string: !!binary |
@@ -47,7 +47,7 @@ interactions:
       Content-Length: ['0']
       User-Agent: [python-requests/2.8.1]
     method: POST
-    uri: http://localhost:3333/command/core/delete-project?project=2034925748801
+    uri: http://localhost:3333/command/core/delete-project?project=1817921792197
   response:
     body:
       string: !!binary |
@@ -65,7 +65,7 @@ interactions:
       Content-Length: ['0']
       User-Agent: [python-requests/2.8.1]
     method: POST
-    uri: http://localhost:3333/command/core/delete-project?project=1601239851577
+    uri: http://localhost:3333/command/core/delete-project?project=1751367891586
   response:
     body:
       string: !!binary |
@@ -83,7 +83,25 @@ interactions:
       Content-Length: ['0']
       User-Agent: [python-requests/2.8.1]
     method: POST
-    uri: http://localhost:3333/command/core/delete-project?project=1744822729257
+    uri: http://localhost:3333/command/core/delete-project?project=2007517626768
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAKtWUErOT0lVUrBSUMrPVlKoBQBbv3TTEQAAAA==
+    headers:
+      content-encoding: [gzip]
+      server: [Jetty(6.1.22)]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['0']
+      User-Agent: [python-requests/2.8.1]
+    method: POST
+    uri: http://localhost:3333/command/core/delete-project?project=2288308655636
   response:
     body:
       string: !!binary |

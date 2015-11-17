@@ -10,6 +10,7 @@ class OpenRefineClient(object):
         'get_project_metadata': 'command/core/get-project-metadata',
         'create_project_from_upload': 'command/core/create-project-from-upload',
         'delete_project': 'command/core/delete-project',
+        'export_rows': 'command/core/export-rows',
     }
 
     def __init__(self, server_url):
@@ -58,6 +59,14 @@ class OpenRefineClient(object):
         res = requests.post(url, params={'project': project_id})
         if res.status_code == 200:
             return res.json().get('code') == 'ok'
+
+    def export_project(self, project_id, file_format='csv'):
+        url = self._generate_url(self._COMMANDS['export_rows'])
+        res = requests.post(url, params={
+            'project': project_id,
+            'format': file_format,
+        })
+        return res.text
 
     def _generate_url(self, command):
         return urlparse.urljoin(self.server_url, command)

@@ -1,7 +1,7 @@
 interactions:
 - request:
-    body: "--e63ace2b1c0b459da22b78c1133e3bda\r\nContent-Disposition: form-data; name=\"\
-      project-name\"\r\n\r\nAnnual Global Temperatures\r\n--e63ace2b1c0b459da22b78c1133e3bda\r\
+    body: "--4ac94554ad544643a53b0d2e388f292f\r\nContent-Disposition: form-data; name=\"\
+      project-name\"\r\n\r\nAnnual Global Temperatures\r\n--4ac94554ad544643a53b0d2e388f292f\r\
       \nContent-Disposition: form-data; name=\"file\"; filename=\"annual.csv\"\r\n\
       \r\nSource,Year,Mean\nGCAG,2014,0.74\nGISTEMP,2014,0.75\nGCAG,2013,0.66\nGISTEMP,2013,0.66\n\
       GCAG,2012,0.62\nGISTEMP,2012,0.64\nGCAG,2011,0.57\nGISTEMP,2011,0.61\nGCAG,2010,0.70\n\
@@ -57,13 +57,13 @@ interactions:
       GCAG,1887,-0.26\nGISTEMP,1887,-0.34\nGCAG,1886,-0.21\nGISTEMP,1886,-0.32\nGCAG,1885,-0.23\n\
       GISTEMP,1885,-0.32\nGCAG,1884,-0.21\nGISTEMP,1884,-0.29\nGCAG,1883,-0.15\nGISTEMP,1883,-0.21\n\
       GCAG,1882,-0.08\nGISTEMP,1882,-0.11\nGCAG,1881,-0.07\nGISTEMP,1881,-0.12\nGCAG,1880,-0.13\n\
-      GISTEMP,1880,-0.21\n\r\n--e63ace2b1c0b459da22b78c1133e3bda--\r\n"
+      GISTEMP,1880,-0.21\n\r\n--4ac94554ad544643a53b0d2e388f292f--\r\n"
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
       Content-Length: ['4883']
-      Content-Type: [multipart/form-data; boundary=e63ace2b1c0b459da22b78c1133e3bda]
+      Content-Type: [multipart/form-data; boundary=4ac94554ad544643a53b0d2e388f292f]
       User-Agent: [python-requests/2.8.1]
     method: POST
     uri: http://localhost:3333/command/core/create-project-from-upload
@@ -71,7 +71,7 @@ interactions:
     body: {string: !!python/unicode ''}
     headers:
       content-length: ['0']
-      location: ['http://localhost:3333/project?project=1893251639040']
+      location: ['http://localhost:3333/project?project=2007517626768']
       server: [Jetty(6.1.22)]
     status: {code: 302, message: Found}
 - request:
@@ -82,12 +82,12 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.8.1]
     method: GET
-    uri: http://localhost:3333/command/core/get-project-metadata?project=1893251639040
+    uri: http://localhost:3333/command/core/get-project-metadata?project=2007517626768
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAAH3KOwqAMAwA0KtIZgUjfqCbk5NbJ7fYRhBsKzWdpHe3J3B6y3vBk2NQMHuf6KqW
-        K+wFze7mSJIiP1CDiUzCtrSuxaFBbHDSOKqhVT1uJbhgz+P8GyY9EtzKQpaEQL05f5BRmzp8AAAA
+        H4sIAAAAAAAAAH3KOwqAMAwA0KtIZgtGFLGbk5NbJ7doIwj9SE0n8e72BE5veQ8E8gwaphAyuWp2
+        cSsY9hcnkpz4hhr2xCRsS2sb7BWiwsHgoNtOd+Nago/2PM6/sedbol9YyJIQ6Od9P5HSxZ18AAAA
     headers:
       content-encoding: [gzip]
       content-type: [application/json; charset=UTF-8]

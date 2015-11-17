@@ -1,7 +1,7 @@
 interactions:
 - request:
-    body: "--25ae6a4808dc43a9a5e14b8e45979469\r\nContent-Disposition: form-data; name=\"\
-      project-name\"\r\n\r\nAnnual Global Temperatures\r\n--25ae6a4808dc43a9a5e14b8e45979469\r\
+    body: "--30a6c92dcfeb4565b8c25df9b1640997\r\nContent-Disposition: form-data; name=\"\
+      project-name\"\r\n\r\nAnnual Global Temperatures\r\n--30a6c92dcfeb4565b8c25df9b1640997\r\
       \nContent-Disposition: form-data; name=\"file\"; filename=\"annual.csv\"\r\n\
       \r\nSource,Year,Mean\nGCAG,2014,0.74\nGISTEMP,2014,0.75\nGCAG,2013,0.66\nGISTEMP,2013,0.66\n\
       GCAG,2012,0.62\nGISTEMP,2012,0.64\nGCAG,2011,0.57\nGISTEMP,2011,0.61\nGCAG,2010,0.70\n\
@@ -57,13 +57,13 @@ interactions:
       GCAG,1887,-0.26\nGISTEMP,1887,-0.34\nGCAG,1886,-0.21\nGISTEMP,1886,-0.32\nGCAG,1885,-0.23\n\
       GISTEMP,1885,-0.32\nGCAG,1884,-0.21\nGISTEMP,1884,-0.29\nGCAG,1883,-0.15\nGISTEMP,1883,-0.21\n\
       GCAG,1882,-0.08\nGISTEMP,1882,-0.11\nGCAG,1881,-0.07\nGISTEMP,1881,-0.12\nGCAG,1880,-0.13\n\
-      GISTEMP,1880,-0.21\n\r\n--25ae6a4808dc43a9a5e14b8e45979469--\r\n"
+      GISTEMP,1880,-0.21\n\r\n--30a6c92dcfeb4565b8c25df9b1640997--\r\n"
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
       Content-Length: ['4883']
-      Content-Type: [multipart/form-data; boundary=25ae6a4808dc43a9a5e14b8e45979469]
+      Content-Type: [multipart/form-data; boundary=30a6c92dcfeb4565b8c25df9b1640997]
       User-Agent: [python-requests/2.8.1]
     method: POST
     uri: http://localhost:3333/command/core/create-project-from-upload
@@ -71,7 +71,7 @@ interactions:
     body: {string: !!python/unicode ''}
     headers:
       content-length: ['0']
-      location: ['http://localhost:3333/project?project=1751367891586']
+      location: ['http://localhost:3333/project?project=1817921792197']
       server: [Jetty(6.1.22)]
     status: {code: 302, message: Found}
 - request:
@@ -80,17 +80,34 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
+      Content-Length: ['0']
       User-Agent: [python-requests/2.8.1]
-    method: GET
-    uri: http://localhost:3333/command/core/get-project-metadata?project=1751367891586
+    method: POST
+    uri: http://localhost:3333/command/core/export-rows?format=csv&project=1817921792197
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAAH3KOwqAMAwA0KtIZgtGFLGbk5NbJ7doIwj9SE0n8e72BE5veQ8E8gwaphAyuWp2
-        cSsY9hcnkpz4hhr2xCRsS2sb7BWiwsHgoNtOd+Nago/2PM6/sedbol9YyJIQ6Od9P5HSxZ18AAAA
+        H4sIAAAAAAAAAGWWTYtVMQyG9/6Wq6Tf7VJEBhcDwrhxOchsFQT/v9MkzUezPM95btu8TXvPy59/
+        f3+9PX6+vf59PL+9/v7w9OXz0yNDqg/4NOqHp28vP74+fxfSRCjvj71b4RAW8n7MVkBSRUjvj21Y
+        YZOeRIA9o32PIJ/3sLZejEBE1ghzz2CLEMLC4AlVGK4I6EHorghodwxElgj1rpKILrKEKQonx8KO
+        rS0rZC6chRTKTH6KnVu1WyFkC2mtnVvVEQ5RYfqoDWFh59ayFTapU4SdW3ECkibCzq12KxzCws6t
+        uEVWHpOFnVueVkBSRdi5ZTcFEq1i5+ZmQKDvgR9VAE6OhLljs+8R5CXvd2rFLhGJ/n6HVoZ9P7hq
+        FjovWIVNks6wQ0tOQCIpzR1aalZAIjnPcudMJImwQ0uuiMyTspDuFBDoe7j3gYg0y1h3lUjSEGGn
+        lpIVNgEVdmy22xBoTKM/Pr77tghCScocOzewQsPfqFDx2e6WIlYKR6tG4fhZ2MmBqxSJTpLiQglp
+        LTs8sBtGRPLuOzxYRiAiy+wTR7TLYKTKOMWrQkg6q/fzrAohKbe3UA0hqbdjgq4/Cek05d57JCAN
+        3HMoN/s8djv6RSDRZWJ+rhA4CZHRFk8pBhEVQoci0VW2wVOqMPwInctWobsgGiVnN14RK5SmG0QQ
+        KxinFQqnw+/znUXzHdpS6AxG0jwN03PngJFMUxf+xCqMpM/rPM2kynTNU0c0CEkilTrSGv0yGl81
+        avgbtFa+01VAIu1Tw6knolPk+w4mIu/TdXsh0Au2wrVnCHTPygpbwkiGKDMcVkWsxCNfriNf5M5U
+        pZ8DzAq1pL1bGMnGlsq7qEY9P2KjYOfbVmekNee4FELShkXaUpXrLi1wnlUBf6YyJun2n1CRs53n
+        mVgVRFm2OI9weAkZpYcjwUiWm+MVQEh2KNPlaXuNkSSXy5lXFcmbFUzS/SMzknBzChc3IVMQxIkI
+        SXJp3ZceEykozWDMawzMsdhpCEk5qYctJKQfWqmFXiGkHwiphvAZ6VIwR/fZy0jOR8Ici42WkSqY
+        o/s+Z6QK5ui+LAnpxyus8ywKI+kEmGdUVeaZm5URJgIfLvSzYWr00z6sYJJuJc33JNS42OpLhnJ2
+        TJXizyHk0xmq5LP1rMS2VcQKhFYAuSZQmWvdl9xBQ5R5zosq061lrhFHGe7feq5+XZWHNDHafVUe
+        VESpd/szkm/8ucrdlQeJke9TxihryemO/yBdLdybeNBphTnXfbEfJKnMeX9fMJK7Z84R1kJIjvyc
+        /b6eGBWdSJJUpV1KjaNUv8+z3D3HyCwXo7TfqIySKuHfjJHJBUJDzXMH/wc24h2c+hEAAA==
     headers:
       content-encoding: [gzip]
-      content-type: [application/json; charset=UTF-8]
+      content-type: [text/plain; charset=utf-8]
       server: [Jetty(6.1.22)]
     status: {code: 200, message: OK}
 version: 1

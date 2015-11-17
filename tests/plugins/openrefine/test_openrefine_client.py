@@ -82,6 +82,18 @@ class TestOpenRefineClient(object):
         inexistent_project_id = '1000'
         assert self._CLIENT.delete_project(inexistent_project_id)
 
+    @VCR.use_cassette()
+    def test_export_project(self):
+        filepath = os.path.join(test_helpers.FIXTURES_PATH, 'annual.csv')
+        with open(filepath, 'r') as f:
+            original_data = f.read().split()
+
+        project_id = self._create_project(filepath=filepath)
+        exported_data = self._CLIENT.export_project(project_id).split()
+
+        assert original_data[0] == exported_data[0]
+        assert len(original_data) == len(exported_data)
+
     def _create_project(self,
                         name='Annual Global Temperatures',
                         filepath=os.path.join(test_helpers.FIXTURES_PATH,
