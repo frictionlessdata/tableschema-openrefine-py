@@ -9,6 +9,7 @@ class OpenRefineClient(object):
         'get_all_project_metadata': 'command/core/get-all-project-metadata',
         'get_project_metadata': 'command/core/get-project-metadata',
         'create_project_from_upload': 'command/core/create-project-from-upload',
+        'delete_project': 'command/core/delete-project',
     }
 
     def __init__(self, server_url):
@@ -51,6 +52,12 @@ class OpenRefineClient(object):
         res = requests.get(url, params={'project': project_id})
         if res.status_code == 200:
             return res.json()
+
+    def delete_project(self, project_id):
+        url = self._generate_url(self._COMMANDS['delete_project'])
+        res = requests.post(url, params={'project': project_id})
+        if res.status_code == 200:
+            return res.json().get('code') == 'ok'
 
     def _generate_url(self, command):
         return urlparse.urljoin(self.server_url, command)

@@ -1,0 +1,20 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['0']
+      User-Agent: [python-requests/2.8.1]
+    method: POST
+    uri: http://localhost:3333/command/core/delete-project?project=1000
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAKtWUErOT0lVUrBSUMrPVlKoBQBbv3TTEQAAAA==
+    headers:
+      content-encoding: [gzip]
+      server: [Jetty(6.1.22)]
+    status: {code: 200, message: OK}
+version: 1
